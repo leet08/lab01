@@ -16,7 +16,7 @@ prediction = str(prediction)
 model2 = joblib.load('./lab week 2/regr_lab2_prob2.pkl')
 
 # Make prediction - features = ['BEDS', 'BATHS', 'SQFT', 'AGE', 'LOTSIZE', 'GARAGE']
-prediction2 = model2.predict([[4, 2.5, 3005, 15, 17903.0, 1]]).round(1)
+prediction2 = model2.predict([[4, 2.5, 3005, 15, 17903.0, 1]])[0].round(1)
 prediction2 = str(prediction2)
 
 @app.route('/')
