@@ -21,5 +21,4 @@ prediction2 = str(prediction2)
 
 @app.route('/')
 def predict1():
-	return 'Prediction for linear regression is ' + prediction + 
-	' and prediction for decision tree regression is ' + prediction2
+	return 'Prediction for linear regression is ' + prediction + ' and prediction for decision tree regression is ' + prediction2
